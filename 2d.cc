@@ -165,8 +165,8 @@ int main()
         blurShader.setInt("screenTexture", 0);
         blurShader.setBool("horizontal", true);
         blurShader.setFloat("radius", radius);
-        // glBindVertexArray(quad3VAO);
-        // glDrawArrays(GL_TRIANGLES, 0, 6);
+        glBindVertexArray(quad3VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
 
         glBindFramebuffer(GL_FRAMEBUFFER, pingPongFBO[0]);
         glBindTexture(GL_TEXTURE_2D, pingPongColorBuffer[1]);
